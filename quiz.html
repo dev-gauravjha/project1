@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="quiz.css">
+    <title>Quiz Application</title>
+</head>
+<body>
+    <section class="main-wrapper">
+        <div class="header">
+            <span class="left-arrow"><i class="fas fa-arrow-left"></i></span>
+            <h1>Lorem ipsum dolor sit amet consectetur.</h1>
+            <span class="user-icon right"><i class="fas fa-user"></i></span>
+        </div>
+         <div class="icon-bar">
+            <div class="timer"><i class="far fa-clock"></i> <span class="timer-clock">30:00</span> </div>
+            <div class="qNumber"><i class="fas fa-book"></i> <span class="currentNumber">1</span>/<span class="outofNumber">15</span></div>
+           <div class="max-marks">Max Marks :<span class="allMarks">15</span></div>
+        </div>
+         <div class="quiz-wrapper">
+             <div class="quiz-container">
+                  <div class="quiz-question">
+                        <div class="q">Q.<span class="questionNumber">1</span></div>
+                        <div class="question-content"><h3 id="Qcontent">Lorem ipsum dolor si Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam iusto numquam quod consequuntur rem laudantium est tenetur perferendis velit minus. t amet consectetur adipisicing elit.</h3></div>
+                  </div>
+                  <div class="quiz-options">
+                       <ol type="A" class="options">
+                           <li>
+                               <label  class="quiz-label"> <p id="opt1" onclick="answered(this)">  </p>
+                                   <input type="radio" name="opt" >
+                                   <span class="checkmark"></span>
+                               </label>
+                           </li>
+                           <li>
+                            <label  class="quiz-label" > <p id="opt2" onclick="answered(this)"></p>
+                                <input type="radio" name="opt" >
+                                <span class="checkmark"></span>
+                            </label>
+                        </li>
+                        <li>
+                            <label  class="quiz-label" > 
+                                <p id="opt3" onclick="answered(this)"></p>
+                                <input type="radio" name="opt" >
+                                <span class="checkmark"></span>
+                            </label>
+                        </li>
+                        <li>
+                            <label  class="quiz-label"> 
+                                <p id="opt4" onclick="answered(this)"></p>
+                                <input type="radio" name="opt" >
+                                <span class="checkmark"></span>
+                            </label>
+                        </li>
+                       </ol>
+                  </div>
+                  <div class="quiz-nav">
+                      <a  class="btn btn-success"><i class="fas fa-arrow-left"></i> Previous</a>
+                      <a  class="btn btn-info"><i class="fas fa-question"></i> Mark as read</a>
+                      <a  class="btn btn-success"><i class="fas fa-mouse-pointer"></i> Deselect</a>
+
+                      <a  class="btn btn-success">Next <i class="fas fa-arrow-right"></i></a>
+                  </div>
+             </div><!--/quiz-container-->
+
+             <div class="quiz-static">
+                 <div class="static" id="static">
+                     
+                 </div>
+
+                 <div class="static-info">
+                    <p><span class="bg-info"></span> Mark as read</p>
+                    <p><span class="bg-light"></span>Not Attemped</p>
+                    <p><span class="bg-succeaa"></span>Answered</p>
+                 </div>
+                    <div class="container">
+                        <a href="" class="submit-btn">Finish Exam</a>
+
+                    </div>
+             </div><!--/quiz-static--> 
+         </div><!--/quiz-wrapper-->
+    </section>
+
+    <script src="https://kit.fontawesome.com/0be2712da4.js" crossorigin="anonymous"></script>
+    <script src="quiz.js"></script>
+</body>
+</html>
